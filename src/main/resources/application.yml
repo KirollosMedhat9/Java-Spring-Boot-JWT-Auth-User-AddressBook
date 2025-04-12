@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/address_book
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+
+jwt:
+  secret: 95c99d7422ddebcee229a35695e62c0d62b14daa67986d74a5209fd3274a52ff446c57492efc903907114a984a31d679632e71733229ccac9d0a3ed8d2e729493d1bbc708f7a0cf1a37cffcbafab60aa43263c27582e503be2456ff2e6c5fe0bb1dccf3dd48f87f09a414a7ca5cb90bd91e785f0b2b2576d7fe85201bbaa339a35220ef0d8d8f3220767d4b3d222c26a5aafe2de4d51d2917989bf49b02d68540358e567aeee64a967939d71fd1e56c7f488e03a81d390f7773b4ccac6c5187963c33592b2df3b62685424d04b528daa23bdf8b82dfe87c7b2d6e458bf411f191a15da111204244be29467b834599a31178614970424abeff9fbab75b7f223ab
+  expiration: 3600000  # 1 hour in milliseconds
